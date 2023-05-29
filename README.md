@@ -18,12 +18,3 @@ List of pages:
    
    
 Note: 8080 is not fixed, just modify some code to change it. 
-
-
-Windows Users using Windows Defender Firewall:
-  Issue: Windows Defender Firewall likes blocking the server when booting.
-  
-  Fix: DO NOT host on Public Networks, as it is a good way to invite hackers. 
-  
-  Reasoning: Windows Defender Firewall has good reasoning for blocking it. Bots scanning for vulnerablilites will see it, and start attacking you. This can lead to all sorts of nasty things
-  
