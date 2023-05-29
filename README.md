@@ -5,16 +5,3 @@ Modifications:
   Added some notes when booting in the console
 
 Note: It doesn't actually record the name field and the address field
-
-List of pages:
-
-(IP Here or localhost):8080
-  
-(IP Here or localhost):8080/hello
-  
-(IP Here or localhost):8080/form.html
-  
-(IP Here or localhost):8080/form (/form.html leads here)
-   
-   
-Note: 8080 is not fixed, just modify some code to change it. 
