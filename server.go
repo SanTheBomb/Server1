@@ -12,8 +12,8 @@ func main() {
 	http.HandleFunc("/form", formHandler)
 	http.HandleFunc("/hello", helloHandler)
 
-	print("Please refer to https://blog.logrocket.com/creating-a-web-server-with-golang/. ")
-	print("If Windows Defender Firewall prompts appear, allow only on private networks for security. ")
+	log.Print("Please refer to https://blog.logrocket.com/creating-a-web-server-with-golang/. ")
+	log.Print("If Windows Defender Firewall prompts appear, allow only on private networks for security. ")
 
 	fmt.Printf("Starting Server at port 8080\n")
 	if err := http.ListenAndServe(":8080", nil); err != nil {
@@ -34,7 +34,7 @@ func formHandler(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "ParseForm() err: %v", err)
 		return
 	}
-	fmt.Fprintf(w, "POST request successful")
+	fmt.Fprintf(w, "POST request successful\n")
 	name := r.FormValue("name")
 	address := r.FormValue("address")
 	fmt.Fprintf(w, "Name = %s\n", name)
