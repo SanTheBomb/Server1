@@ -4,4 +4,4 @@ This is my first server and it is hosted on port 8080. It was made using Golang 
 Modifications:
   Added some notes when booting in the console
 
-Note: It doesn't actually record the name field and the address field
+Note: It doesn't actually record the name field and the address field into a spreadsheet for later use. They are varibles set in that session and deleted when the session is terminated by Ctrl-C
